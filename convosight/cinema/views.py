@@ -119,10 +119,10 @@ class FilterCinemaShowList(generics.ListAPIView):
             movie = self.request.GET.get('movie')
 
             if city:
-                data = data.filter(cinema__address__city=city)
+                data = data.filter(cinema__address__city__icontains=city)
 
             if movie:
-                data = data.filter(movie__name=city)
+                data = data.filter(movie__name__icontains=movie)
         except (TypeError, ValueError):
             data = data.none()
 
