@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipdb = "*"
+
+[packages]
+django = "==2.1.5"
+django-cors-headers = "==3.2.1"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+django-rest-swagger = "*"
+djangorestframework-jwt = "*"
+psycopg2 = "*"
+orm-choices = "*"
+
+[requires]
+python_version = "3.7"
